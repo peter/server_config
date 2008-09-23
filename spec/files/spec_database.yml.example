@@ -1,0 +1,29 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: events_development
+  username: root
+  password:
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: events_test
+  username: root
+  password:
+
+staging:
+  adapter: mysql
+  encoding: utf8
+  database: events_staging
+  socket: /var/run/mysqld/mysqld.sock
+  username: root
+  password: __db_password__
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: events_production
+  socket: /var/run/mysqld/mysqld.sock
+  username: root
+  password: __db_password__

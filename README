@@ -1,0 +1,43 @@
+ServerConfig
+============
+
+A simple plugin to help separate sensitive configuration such as server passwords
+from your Rails source code.
+
+Example
+=======
+
+Server parameters are configured in a config/server.rb file:
+
+ServerConfig.configure do |c|
+  c.param :name => :db_password, :value => "my_db_password",
+    :files => ["vendor/plugins/server_config/spec/files/spec_database.yml.example"]
+  c.param :name => :payex_merchant_key, :value => "the_merchant_key",
+    :files => ["vendor/plugins/server_config/spec/files/merchant.yml"]
+  c.param :name => :smtp_password, :value => "my_smtp_password"
+end
+
+If you provide the :files option then any occurence of the "__param_name__"
+(i.e. __db_password__) in those files will be replaced with the param value
+when you run the rake task server_config:write. 
+If the extension of the file is .example then the result will be written to
+a file with the same path but without the .example extension.
+If the file does not have the .example extension then replacements are made inline.
+
+Server parameters can be accessed via the global server_param(:param_name) method.
+
+In your Capistrano deploy.rb you might want to do something like this:
+
+desc "Copy in server specific configuration files"
+task :setup_config do
+  run <<-END
+    cp #{shared_path}/server.rb #{release_path}/config &&
+    cd #{release_path} && rake server_config:write
+  END
+end
+
+task :before_symlink, :roles => :app do
+  setup_config
+end  
+
+Copyright (c) 2008 Peter Marklund, released under the MIT license

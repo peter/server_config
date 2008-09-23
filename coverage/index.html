@@ -1,0 +1,2007 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'><head><title>C0 code coverage information</title>
+    <style type='text/css'>body { background-color: rgb(240, 240, 245); }</style>
+    <style type='text/css'>span.cross-ref-title {
+ font-size: 140%;
+}
+span.cross-ref a {
+ text-decoration: none;
+}
+span.cross-ref {
+ background-color:#f3f7fa;
+ border: 1px dashed #333;
+ margin: 1em;
+ padding: 0.5em;
+ overflow: hidden;
+}
+a.crossref-toggle {
+ text-decoration: none;
+}
+span.marked0 {
+ background-color: rgb(185, 210, 200);
+ display: block;
+}
+span.marked1 {
+ background-color: rgb(190, 215, 205);
+ display: block;
+}
+span.inferred0 {
+ background-color: rgb(175, 200, 200);
+ display: block;
+}
+span.inferred1 {
+ background-color: rgb(180, 205, 205);
+ display: block;
+}
+span.uncovered0 {
+ background-color: rgb(225, 110, 110);
+ display: block;
+}
+span.uncovered1 {
+ background-color: rgb(235, 120, 120);
+ display: block;
+}
+span.overview {
+ border-bottom: 8px solid black;
+}
+div.overview {
+ border-bottom: 8px solid black;
+}
+body {
+ font-family: verdana, arial, helvetica;
+}
+div.footer {
+ font-size: 68%;
+ margin-top: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+ margin-bottom: 0.5em;
+}
+h5 {
+ margin-top: 0.5em;
+}
+.hidden {
+ display: none;
+}
+div.separator {
+ height: 10px;
+}
+/* Commented out for better readability, esp. on IE */
+/*
+table tr td, table tr th {
+ font-size: 68%;
+}
+td.value table tr td {
+ font-size: 11px;
+}
+*/
+table.percent_graph {
+ height: 12px;
+ border: #808080 1px solid;
+ empty-cells: show;
+}
+table.percent_graph td.covered {
+ height: 10px;
+ background: #00f000;
+}
+table.percent_graph td.uncovered {
+ height: 10px;
+ background: #e00000;
+}
+table.percent_graph td.NA {
+ height: 10px;
+ background: #eaeaea;
+}
+table.report {
+ border-collapse: collapse;
+ width: 100%;
+}
+table.report td.heading {
+ background: #dcecff;
+ border: #d0d0d0 1px solid;
+ font-weight: bold;
+ text-align: center;
+}
+table.report td.heading:hover {
+ background: #c0ffc0;
+}
+table.report td.text {
+ border: #d0d0d0 1px solid;
+}
+table.report td.value,
+table.report td.lines_total,
+table.report td.lines_code {
+ text-align: right;
+ border: #d0d0d0 1px solid;
+}
+table.report tr.light {
+ background-color: rgb(240, 240, 245);
+}
+table.report tr.dark {
+ background-color: rgb(230, 230, 235);
+}
+</style>
+    <script type='text/javascript'>
+// <![CDATA[
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make cross-references hidden by default
+  document.writeln( "<style type=\"text/css\">span.cross-ref { display: none }</style>" )
+  // ]]>
+</script>
+    </head>
+  <body><h3>C0 code coverage information</h3>
+    <p>Generated on Mon Sep 22 23:48:16 +0200 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
+      </p>
+    <hr/>
+    <table class='report'><thead><tr><td class='heading'>Name</td>
+      <td class='heading'>Total lines</td>
+      <td class='heading'>Lines of code</td>
+      <td class='heading'>Total coverage</td>
+      <td class='heading'>Code coverage</td>
+      </tr>
+    </thead>
+  <tbody><tr class='light'><td>TOTAL</td>
+      <td class='lines_total'><tt>3896</tt>
+        </td>
+      <td class='lines_code'><tt>3093</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>44.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='44'/>
+                  <td class='uncovered' width='56'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>33.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='33'/>
+                  <td class='uncovered' width='67'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-concerns-terms_of_service-init_rb.html'>/Users/peter/src/events/app/concerns/terms_of_service/init.rb</a>
+        </td>
+      <td class='lines_total'><tt>34</tt>
+        </td>
+      <td class='lines_code'><tt>32</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>26.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='26'/>
+                  <td class='uncovered' width='74'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>21.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='22'/>
+                  <td class='uncovered' width='78'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-admin_controller_rb.html'>/Users/peter/src/events/app/controllers/admin_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>23</tt>
+        </td>
+      <td class='lines_code'><tt>17</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>17.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='17'/>
+                  <td class='uncovered' width='83'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>17.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='18'/>
+                  <td class='uncovered' width='82'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-application_rb.html'>/Users/peter/src/events/app/controllers/application.rb</a>
+        </td>
+      <td class='lines_total'><tt>106</tt>
+        </td>
+      <td class='lines_code'><tt>83</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>41.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='42'/>
+                  <td class='uncovered' width='58'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>25.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='25'/>
+                  <td class='uncovered' width='75'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-attendees_controller_rb.html'>/Users/peter/src/events/app/controllers/attendees_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>66</tt>
+        </td>
+      <td class='lines_code'><tt>55</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>28.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>21.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='22'/>
+                  <td class='uncovered' width='78'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-event_types_controller_rb.html'>/Users/peter/src/events/app/controllers/event_types_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>92</tt>
+        </td>
+      <td class='lines_code'><tt>65</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>34.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='35'/>
+                  <td class='uncovered' width='65'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>16.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='17'/>
+                  <td class='uncovered' width='83'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-event_wizard_controller_rb.html'>/Users/peter/src/events/app/controllers/event_wizard_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>223</tt>
+        </td>
+      <td class='lines_code'><tt>194</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>19.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='20'/>
+                  <td class='uncovered' width='80'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>12.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='13'/>
+                  <td class='uncovered' width='87'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-events_controller_rb.html'>/Users/peter/src/events/app/controllers/events_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>132</tt>
+        </td>
+      <td class='lines_code'><tt>95</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>37.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='37'/>
+                  <td class='uncovered' width='63'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>18.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='19'/>
+                  <td class='uncovered' width='81'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-home_controller_rb.html'>/Users/peter/src/events/app/controllers/home_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>81</tt>
+        </td>
+      <td class='lines_code'><tt>74</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>22.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='22'/>
+                  <td class='uncovered' width='78'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>14.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='15'/>
+                  <td class='uncovered' width='85'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-kawaii_controller_rb.html'>/Users/peter/src/events/app/controllers/kawaii_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>111</tt>
+        </td>
+      <td class='lines_code'><tt>88</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>38.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='39'/>
+                  <td class='uncovered' width='61'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>33.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='33'/>
+                  <td class='uncovered' width='67'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-monitor_controller_rb.html'>/Users/peter/src/events/app/controllers/monitor_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>13</tt>
+        </td>
+      <td class='lines_code'><tt>10</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>53.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='54'/>
+                  <td class='uncovered' width='46'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>40.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='40'/>
+                  <td class='uncovered' width='60'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-sessions_controller_rb.html'>/Users/peter/src/events/app/controllers/sessions_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>33</tt>
+        </td>
+      <td class='lines_code'><tt>30</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>24.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='24'/>
+                  <td class='uncovered' width='76'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>16.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='17'/>
+                  <td class='uncovered' width='83'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-signup_controller_rb.html'>/Users/peter/src/events/app/controllers/signup_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>232</tt>
+        </td>
+      <td class='lines_code'><tt>203</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>21.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='21'/>
+                  <td class='uncovered' width='79'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>12.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='12'/>
+                  <td class='uncovered' width='88'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-signups_controller_rb.html'>/Users/peter/src/events/app/controllers/signups_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>11</tt>
+        </td>
+      <td class='lines_code'><tt>10</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>45.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='45'/>
+                  <td class='uncovered' width='55'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>40.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='40'/>
+                  <td class='uncovered' width='60'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-controllers-ticket_types_controller_rb.html'>/Users/peter/src/events/app/controllers/ticket_types_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>87</tt>
+        </td>
+      <td class='lines_code'><tt>61</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>33.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='33'/>
+                  <td class='uncovered' width='67'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>14.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='15'/>
+                  <td class='uncovered' width='85'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-controllers-users_controller_rb.html'>/Users/peter/src/events/app/controllers/users_controller.rb</a>
+        </td>
+      <td class='lines_total'><tt>79</tt>
+        </td>
+      <td class='lines_code'><tt>61</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>38.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='38'/>
+                  <td class='uncovered' width='62'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>26.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='26'/>
+                  <td class='uncovered' width='74'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-admin_helper_rb.html'>/Users/peter/src/events/app/helpers/admin_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>2</tt>
+        </td>
+      <td class='lines_code'><tt>2</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-helpers-application_helper_rb.html'>/Users/peter/src/events/app/helpers/application_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>127</tt>
+        </td>
+      <td class='lines_code'><tt>108</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>27.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='28'/>
+                  <td class='uncovered' width='72'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>16.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='17'/>
+                  <td class='uncovered' width='83'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-attendees_helper_rb.html'>/Users/peter/src/events/app/helpers/attendees_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>2</tt>
+        </td>
+      <td class='lines_code'><tt>2</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-helpers-event_types_helper_rb.html'>/Users/peter/src/events/app/helpers/event_types_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>2</tt>
+        </td>
+      <td class='lines_code'><tt>2</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-event_wizard_helper_rb.html'>/Users/peter/src/events/app/helpers/event_wizard_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>18</tt>
+        </td>
+      <td class='lines_code'><tt>15</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>66.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='67'/>
+                  <td class='uncovered' width='33'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>60.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='60'/>
+                  <td class='uncovered' width='40'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-helpers-events_helper_rb.html'>/Users/peter/src/events/app/helpers/events_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>38</tt>
+        </td>
+      <td class='lines_code'><tt>32</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>36.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='37'/>
+                  <td class='uncovered' width='63'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>25.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='25'/>
+                  <td class='uncovered' width='75'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-home_helper_rb.html'>/Users/peter/src/events/app/helpers/home_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>7</tt>
+        </td>
+      <td class='lines_code'><tt>7</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>28.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>28.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-helpers-questions_helper_rb.html'>/Users/peter/src/events/app/helpers/questions_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>40</tt>
+        </td>
+      <td class='lines_code'><tt>38</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>15.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='15'/>
+                  <td class='uncovered' width='85'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>10.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='11'/>
+                  <td class='uncovered' width='89'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-sessions_helper_rb.html'>/Users/peter/src/events/app/helpers/sessions_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>5</tt>
+        </td>
+      <td class='lines_code'><tt>5</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>40.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='40'/>
+                  <td class='uncovered' width='60'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>40.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='40'/>
+                  <td class='uncovered' width='60'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-helpers-signup_helper_rb.html'>/Users/peter/src/events/app/helpers/signup_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>66</tt>
+        </td>
+      <td class='lines_code'><tt>55</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>34.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='35'/>
+                  <td class='uncovered' width='65'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>27.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='27'/>
+                  <td class='uncovered' width='73'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-system_mailer_helper_rb.html'>/Users/peter/src/events/app/helpers/system_mailer_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>21</tt>
+        </td>
+      <td class='lines_code'><tt>17</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>47.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='48'/>
+                  <td class='uncovered' width='52'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>35.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='35'/>
+                  <td class='uncovered' width='65'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-helpers-ticket_types_helper_rb.html'>/Users/peter/src/events/app/helpers/ticket_types_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>2</tt>
+        </td>
+      <td class='lines_code'><tt>2</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-helpers-users_helper_rb.html'>/Users/peter/src/events/app/helpers/users_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>5</tt>
+        </td>
+      <td class='lines_code'><tt>5</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>40.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='40'/>
+                  <td class='uncovered' width='60'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>40.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='40'/>
+                  <td class='uncovered' width='60'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-answer_rb.html'>/Users/peter/src/events/app/models/answer.rb</a>
+        </td>
+      <td class='lines_total'><tt>29</tt>
+        </td>
+      <td class='lines_code'><tt>25</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>31.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='31'/>
+                  <td class='uncovered' width='69'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>24.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='24'/>
+                  <td class='uncovered' width='76'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-attendee_rb.html'>/Users/peter/src/events/app/models/attendee.rb</a>
+        </td>
+      <td class='lines_total'><tt>101</tt>
+        </td>
+      <td class='lines_code'><tt>85</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>42.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='43'/>
+                  <td class='uncovered' width='57'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>32.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='33'/>
+                  <td class='uncovered' width='67'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-base_mailer_rb.html'>/Users/peter/src/events/app/models/base_mailer.rb</a>
+        </td>
+      <td class='lines_total'><tt>8</tt>
+        </td>
+      <td class='lines_code'><tt>7</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>37.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='38'/>
+                  <td class='uncovered' width='62'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>42.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='43'/>
+                  <td class='uncovered' width='57'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-conditions_rb.html'>/Users/peter/src/events/app/models/conditions.rb</a>
+        </td>
+      <td class='lines_total'><tt>16</tt>
+        </td>
+      <td class='lines_code'><tt>14</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>37.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='38'/>
+                  <td class='uncovered' width='62'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>28.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-event_rb.html'>/Users/peter/src/events/app/models/event.rb</a>
+        </td>
+      <td class='lines_total'><tt>242</tt>
+        </td>
+      <td class='lines_code'><tt>201</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>52.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='52'/>
+                  <td class='uncovered' width='48'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>42.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='42'/>
+                  <td class='uncovered' width='58'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-event_type_rb.html'>/Users/peter/src/events/app/models/event_type.rb</a>
+        </td>
+      <td class='lines_total'><tt>16</tt>
+        </td>
+      <td class='lines_code'><tt>13</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>50.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='50'/>
+                  <td class='uncovered' width='50'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>38.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='38'/>
+                  <td class='uncovered' width='62'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-locale_rb.html'>/Users/peter/src/events/app/models/locale.rb</a>
+        </td>
+      <td class='lines_total'><tt>43</tt>
+        </td>
+      <td class='lines_code'><tt>34</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>46.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='47'/>
+                  <td class='uncovered' width='53'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>32.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='32'/>
+                  <td class='uncovered' width='68'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-no_remaining_tickets_rb.html'>/Users/peter/src/events/app/models/no_remaining_tickets.rb</a>
+        </td>
+      <td class='lines_total'><tt>1</tt>
+        </td>
+      <td class='lines_code'><tt>1</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-payex_soap_client_rb.html'>/Users/peter/src/events/app/models/payex_soap_client.rb</a>
+        </td>
+      <td class='lines_total'><tt>68</tt>
+        </td>
+      <td class='lines_code'><tt>44</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>19.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='19'/>
+                  <td class='uncovered' width='81'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>18.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='18'/>
+                  <td class='uncovered' width='82'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-payment-base_client_rb.html'>/Users/peter/src/events/app/models/payment/base_client.rb</a>
+        </td>
+      <td class='lines_total'><tt>54</tt>
+        </td>
+      <td class='lines_code'><tt>33</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>61.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='61'/>
+                  <td class='uncovered' width='39'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>36.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='36'/>
+                  <td class='uncovered' width='64'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-payment-payex_client_rb.html'>/Users/peter/src/events/app/models/payment/payex_client.rb</a>
+        </td>
+      <td class='lines_total'><tt>162</tt>
+        </td>
+      <td class='lines_code'><tt>128</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>37.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='37'/>
+                  <td class='uncovered' width='63'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>26.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='27'/>
+                  <td class='uncovered' width='73'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-payment-paypal_client_rb.html'>/Users/peter/src/events/app/models/payment/paypal_client.rb</a>
+        </td>
+      <td class='lines_total'><tt>35</tt>
+        </td>
+      <td class='lines_code'><tt>30</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>22.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='23'/>
+                  <td class='uncovered' width='77'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>16.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='17'/>
+                  <td class='uncovered' width='83'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-question_rb.html'>/Users/peter/src/events/app/models/question.rb</a>
+        </td>
+      <td class='lines_total'><tt>116</tt>
+        </td>
+      <td class='lines_code'><tt>89</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>44.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='44'/>
+                  <td class='uncovered' width='56'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>28.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='28'/>
+                  <td class='uncovered' width='72'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-signup_rb.html'>/Users/peter/src/events/app/models/signup.rb</a>
+        </td>
+      <td class='lines_total'><tt>242</tt>
+        </td>
+      <td class='lines_code'><tt>198</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>47.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='48'/>
+                  <td class='uncovered' width='52'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>36.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='36'/>
+                  <td class='uncovered' width='64'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-system_mailer_rb.html'>/Users/peter/src/events/app/models/system_mailer.rb</a>
+        </td>
+      <td class='lines_total'><tt>24</tt>
+        </td>
+      <td class='lines_code'><tt>22</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>29.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>22.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='23'/>
+                  <td class='uncovered' width='77'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-ticket_rb.html'>/Users/peter/src/events/app/models/ticket.rb</a>
+        </td>
+      <td class='lines_total'><tt>28</tt>
+        </td>
+      <td class='lines_code'><tt>24</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>53.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='54'/>
+                  <td class='uncovered' width='46'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>45.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='46'/>
+                  <td class='uncovered' width='54'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-ticket_type_rb.html'>/Users/peter/src/events/app/models/ticket_type.rb</a>
+        </td>
+      <td class='lines_total'><tt>102</tt>
+        </td>
+      <td class='lines_code'><tt>83</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>46.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='46'/>
+                  <td class='uncovered' width='54'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>33.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='34'/>
+                  <td class='uncovered' width='66'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-ui-attendee_table_rb.html'>/Users/peter/src/events/app/models/ui/attendee_table.rb</a>
+        </td>
+      <td class='lines_total'><tt>56</tt>
+        </td>
+      <td class='lines_code'><tt>46</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>23.2%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='23'/>
+                  <td class='uncovered' width='77'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>17.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='17'/>
+                  <td class='uncovered' width='83'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-app-models-user_rb.html'>/Users/peter/src/events/app/models/user.rb</a>
+        </td>
+      <td class='lines_total'><tt>160</tt>
+        </td>
+      <td class='lines_code'><tt>120</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>64.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='64'/>
+                  <td class='uncovered' width='36'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>52.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='53'/>
+                  <td class='uncovered' width='47'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-app-models-user_mailer_rb.html'>/Users/peter/src/events/app/models/user_mailer.rb</a>
+        </td>
+      <td class='lines_total'><tt>26</tt>
+        </td>
+      <td class='lines_code'><tt>23</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>38.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='38'/>
+                  <td class='uncovered' width='62'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>30.4%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='30'/>
+                  <td class='uncovered' width='70'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-environment_rb.html'>/Users/peter/src/events/config/environment.rb</a>
+        </td>
+      <td class='lines_total'><tt>66</tt>
+        </td>
+      <td class='lines_code'><tt>18</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-config-initializers-activerecord_patches_rb.html'>/Users/peter/src/events/config/initializers/activerecord_patches.rb</a>
+        </td>
+      <td class='lines_total'><tt>4</tt>
+        </td>
+      <td class='lines_code'><tt>3</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-initializers-app_config_rb.html'>/Users/peter/src/events/config/initializers/app_config.rb</a>
+        </td>
+      <td class='lines_total'><tt>37</tt>
+        </td>
+      <td class='lines_code'><tt>29</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>91.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='92'/>
+                  <td class='uncovered' width='8'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>89.7%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='90'/>
+                  <td class='uncovered' width='10'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-config-initializers-gibberish_translate_rb.html'>/Users/peter/src/events/config/initializers/gibberish_translate.rb</a>
+        </td>
+      <td class='lines_total'><tt>3</tt>
+        </td>
+      <td class='lines_code'><tt>3</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-initializers-i18n_rb.html'>/Users/peter/src/events/config/initializers/i18n.rb</a>
+        </td>
+      <td class='lines_total'><tt>8</tt>
+        </td>
+      <td class='lines_code'><tt>7</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-config-initializers-kawaii_rb.html'>/Users/peter/src/events/config/initializers/kawaii.rb</a>
+        </td>
+      <td class='lines_total'><tt>86</tt>
+        </td>
+      <td class='lines_code'><tt>68</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>43.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='43'/>
+                  <td class='uncovered' width='57'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>36.8%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='37'/>
+                  <td class='uncovered' width='63'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-initializers-mysql_requirement_rb.html'>/Users/peter/src/events/config/initializers/mysql_requirement.rb</a>
+        </td>
+      <td class='lines_total'><tt>6</tt>
+        </td>
+      <td class='lines_code'><tt>6</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-config-initializers-patches_rb.html'>/Users/peter/src/events/config/initializers/patches.rb</a>
+        </td>
+      <td class='lines_total'><tt>48</tt>
+        </td>
+      <td class='lines_code'><tt>36</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>50.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='50'/>
+                  <td class='uncovered' width='50'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>33.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='33'/>
+                  <td class='uncovered' width='67'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-initializers-paypal_rb.html'>/Users/peter/src/events/config/initializers/paypal.rb</a>
+        </td>
+      <td class='lines_total'><tt>1</tt>
+        </td>
+      <td class='lines_code'><tt>1</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-config-initializers-ruby_patches_rb.html'>/Users/peter/src/events/config/initializers/ruby_patches.rb</a>
+        </td>
+      <td class='lines_total'><tt>20</tt>
+        </td>
+      <td class='lines_code'><tt>14</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>50.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='50'/>
+                  <td class='uncovered' width='50'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>28.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-initializers-view_utils_rb.html'>/Users/peter/src/events/config/initializers/view_utils.rb</a>
+        </td>
+      <td class='lines_total'><tt>3</tt>
+        </td>
+      <td class='lines_code'><tt>1</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-config-routes_rb.html'>/Users/peter/src/events/config/routes.rb</a>
+        </td>
+      <td class='lines_total'><tt>92</tt>
+        </td>
+      <td class='lines_code'><tt>78</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-config-server_rb.html'>/Users/peter/src/events/config/server.rb</a>
+        </td>
+      <td class='lines_total'><tt>8</tt>
+        </td>
+      <td class='lines_code'><tt>8</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-lib-authenticated_system_rb.html'>/Users/peter/src/events/lib/authenticated_system.rb</a>
+        </td>
+      <td class='lines_total'><tt>116</tt>
+        </td>
+      <td class='lines_code'><tt>56</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>65.5%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='66'/>
+                  <td class='uncovered' width='34'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>28.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='29'/>
+                  <td class='uncovered' width='71'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='-Users-peter-src-events-lib-posts_data_rb.html'>/Users/peter/src/events/lib/posts_data.rb</a>
+        </td>
+      <td class='lines_total'><tt>78</tt>
+        </td>
+      <td class='lines_code'><tt>66</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>32.1%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='32'/>
+                  <td class='uncovered' width='68'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>27.3%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='27'/>
+                  <td class='uncovered' width='73'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='-Users-peter-src-events-lib-validates_email_rb.html'>/Users/peter/src/events/lib/validates_email.rb</a>
+        </td>
+      <td class='lines_total'><tt>14</tt>
+        </td>
+      <td class='lines_code'><tt>13</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>78.6%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='79'/>
+                  <td class='uncovered' width='21'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>76.9%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='77'/>
+                  <td class='uncovered' width='23'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='lib-server_config_rb.html'>lib/server_config.rb</a>
+        </td>
+      <td class='lines_total'><tt>53</tt>
+        </td>
+      <td class='lines_code'><tt>43</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='light'><td><a href='spec-server_config_spec_rb.html'>spec/server_config_spec.rb</a>
+        </td>
+      <td class='lines_total'><tt>63</tt>
+        </td>
+      <td class='lines_code'><tt>52</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    <tr class='dark'><td><a href='spec-spec_helper_rb.html'>spec/spec_helper.rb</a>
+        </td>
+      <td class='lines_total'><tt>3</tt>
+        </td>
+      <td class='lines_code'><tt>3</tt>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_code'>100.0%</tt>
+              &nbsp;</td>
+            <td><table cellspacing='0' class='percent_graph' cellpadding='0' width='100'><tr><td class='covered' width='100'/>
+                  <td class='uncovered' width='0'/>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+<hr/>
+    <p>Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'>rcov code coverage analysis tool for Ruby</a>
+   version 0.8.1.2.</p>
+<p><a href='http://validator.w3.org/check/referer'><img src='http://www.w3.org/Icons/valid-xhtml11' height='31' alt='Valid XHTML 1.1!' width='88'/>
+        </a>
+      <a href='http://jigsaw.w3.org/css-validator/check/referer'><img src='http://jigsaw.w3.org/css-validator/images/vcss' alt='Valid CSS!' style='border:0;width:88px;height:31px'/>
+        </a>
+      </p>
+    </body>
+  </html>
