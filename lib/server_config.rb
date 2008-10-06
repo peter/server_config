@@ -21,8 +21,10 @@ class ServerConfig
   end
   
   def param_value(name)
-    params[name.to_sym] || raise("No server param '#{name}' defined in environment #{RAILS_ENV}")
-    params[name.to_sym][:value]
+    if RAILS_ENV == "production" && params[name.to_sym].nil?
+      raise("No server param '#{name}' defined in environment #{RAILS_ENV}")
+    end
+    params[name.to_sym] ? params[name.to_sym][:value] : nil
   end
 
   def self.write
